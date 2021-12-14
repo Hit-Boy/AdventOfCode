@@ -12,28 +12,43 @@ def log(message, end='\n'):
 def loginfo(message, end='\n'):
 	sys.stderr.write(str(message)+end)
 
+def logof3(array,startindex,end='\n'):
+	log("{},{},{} = {} ".format(array[startindex], array[startindex+1], array[startindex+2],sumof3(array,startindex)),end=end)
+
+def sumof3(array,startindex):
+	return array[startindex]+array[startindex+1]+array[startindex+2]
+
 def solve():
 	global args
-
-	previous = -1
-	current = largercount = 0
+	measurements = []
+	current = currentp1 = largercount = 0
+	elementnumber = 0
 
 	for input in args.input.readlines():
-		current = int(input.strip())
-		log(current, end='')
+		measurements.append(int(input.strip()))
 
-		if (previous == -1):
-			previous = current
-			log("")
-			continue
+	max = len(measurements)
+	log("There are {} elements in the input file".format(max))
 
-		if (current > previous):
+	while True:
+
+		try:
+			current = sumof3(measurements, elementnumber)
+			currentp1 = sumof3(measurements, elementnumber+1)
+		except IndexError as e:
+			# reached end of list
+			break
+
+		logof3(measurements, elementnumber, end='')
+
+		if (currentp1 > current):
 			largercount += 1
 			log(" + ({})".format(largercount))
 		else:
 			log("")
 
-		previous = current
+
+		elementnumber += 1
 
 	loginfo("There are {} measurements that are larger then previous".format(largercount))
 
@@ -42,9 +57,9 @@ def main(argv):
 	global args
 	version="1.0.1"
 
-	parser = argparse.ArgumentParser(description='solve puzzle 1',
+	parser = argparse.ArgumentParser(description='solve puzzle 2',
 		formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-	parser.add_argument('--input', type=argparse.FileType('r'), default='./input', help='Profile of the AWS config file to use')
+	parser.add_argument('--input', type=argparse.FileType('r'), default='./input', help='input file to use')
 	parser.add_argument('--version', action='version', version='%(prog)s '+version, help='Show program version and exit')
 	parser.add_argument('--verbose', default=False, action='store_true', help='Enable all log output. It will be sent to stderr.')
 
