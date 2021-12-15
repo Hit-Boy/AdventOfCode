@@ -49,7 +49,7 @@ def main(argv):
 	global args
 	version="1.0.1"
 
-	parser = argparse.ArgumentParser(description='solve puzzle 2',
+	parser = argparse.ArgumentParser(description='solve puzzle 2 part 2',
 		formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 	parser.add_argument('--input', type=argparse.FileType('r'), default='./input', help='input file to use')
 	parser.add_argument('--version', action='version', version='%(prog)s '+version, help='Show program version and exit')
