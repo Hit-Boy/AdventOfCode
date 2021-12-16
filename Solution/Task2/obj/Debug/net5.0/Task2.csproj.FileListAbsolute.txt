@@ -1,0 +1,16 @@
+C:\MyProjects\AdventOfCode\Solution\Task2\bin\Debug\net5.0\Task2.exe
+C:\MyProjects\AdventOfCode\Solution\Task2\bin\Debug\net5.0\Task2.deps.json
+C:\MyProjects\AdventOfCode\Solution\Task2\bin\Debug\net5.0\Task2.runtimeconfig.json
+C:\MyProjects\AdventOfCode\Solution\Task2\bin\Debug\net5.0\Task2.runtimeconfig.dev.json
+C:\MyProjects\AdventOfCode\Solution\Task2\bin\Debug\net5.0\Task2.dll
+C:\MyProjects\AdventOfCode\Solution\Task2\bin\Debug\net5.0\ref\Task2.dll
+C:\MyProjects\AdventOfCode\Solution\Task2\bin\Debug\net5.0\Task2.pdb
+C:\MyProjects\AdventOfCode\Solution\Task2\obj\Debug\net5.0\Task2.csproj.AssemblyReference.cache
+C:\MyProjects\AdventOfCode\Solution\Task2\obj\Debug\net5.0\Task2.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyProjects\AdventOfCode\Solution\Task2\obj\Debug\net5.0\Task2.AssemblyInfoInputs.cache
+C:\MyProjects\AdventOfCode\Solution\Task2\obj\Debug\net5.0\Task2.AssemblyInfo.cs
+C:\MyProjects\AdventOfCode\Solution\Task2\obj\Debug\net5.0\Task2.csproj.CoreCompileInputs.cache
+C:\MyProjects\AdventOfCode\Solution\Task2\obj\Debug\net5.0\Task2.dll
+C:\MyProjects\AdventOfCode\Solution\Task2\obj\Debug\net5.0\ref\Task2.dll
+C:\MyProjects\AdventOfCode\Solution\Task2\obj\Debug\net5.0\Task2.pdb
+C:\MyProjects\AdventOfCode\Solution\Task2\obj\Debug\net5.0\Task2.genruntimeconfig.cache
